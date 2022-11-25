@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
-
+        task3();
     }
     public static void task1() {
         System.out.println("Homework 7");
@@ -89,6 +89,29 @@ public class Main {
         int friday = 3;
         for (; friday <= 31; friday+=7) {
         System.out.println("Сегодня пятница - " + friday + "-е число. Необходимо сдать отчет");
+        }
+    }
+    public static void task3() {
+        //Задание 3.1
+        System.out.println(" ");
+        System.out.println("Задание 3.1");
+        System.out.println(" ");
+        int i = 0;
+        while (i < 2022+100) {
+            i += 79;
+            if (i >= 2022-200 && i <= 2022+100) {
+                System.out.println(i);
+            }
+        }
+        //Задание 3.2
+        System.out.println(" ");
+        System.out.println("Задание 3.2");
+        System.out.println(" ");
+        int a = 0;
+        while (a < 10) {
+            a++;
+            int b = 2 * a;
+            System.out.println("2 * " + a + " = " + b);
         }
     }
 }
