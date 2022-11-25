@@ -1,6 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         task1();
+        task2();
+
     }
     public static void task1() {
         System.out.println("Homework 7");
@@ -39,6 +41,54 @@ public class Main {
             year++;
             population = population + (population * 17 / 1000 - population * 8 / 1000);
             System.out.println("Год " + year + ", население страны составит " + population + " человек");
+        }
+    }
+    public static void task2() {
+        //Задание 2.1
+        System.out.println(" ");
+        System.out.println("Задание 2.1");
+        System.out.println(" ");
+        int monthlySavings = 15000;
+        int monthNumber = 0;
+        while (monthlySavings < 12_000_000) {
+            monthNumber++;
+            monthlySavings = monthlySavings * 7 / 100 + monthlySavings;
+            System.out.println("Месяц " + monthNumber + ", сумма накоплений равна " + monthlySavings + " рублей");
+        }
+
+        //Задание 2.2
+        System.out.println(" ");
+        System.out.println("Задание 2.2");
+        System.out.println(" ");
+        int monthlySavings1 = 15000;
+        int monthNumber1 = 0;
+        while (monthlySavings1 < 12_000_000) {
+            monthNumber1++;
+            monthlySavings1 = monthlySavings1 * 7 / 100 + monthlySavings1;
+            if (monthNumber1 % 6 == 0) {
+                System.out.println("Месяц " + monthNumber1 + ", сумма накоплений равна " + monthlySavings1 + " рублей");
+            }
+        }
+        //Задание 2.3
+        System.out.println(" ");
+        System.out.println("Задание 2.3");
+        System.out.println(" ");
+        int monthlySavings2 = 15000;
+        int monthNumber2 = 0;
+        while (monthNumber2 <= 9*12) {
+            monthNumber2++;
+            monthlySavings2 = monthlySavings2 * 7 / 100 + monthlySavings2;
+            if (monthNumber2 % 6 == 0) {
+            System.out.println("Месяц " + monthNumber2 + ", сумма накоплений равна " + monthlySavings2 + " рублей");
+            }
+        }
+        //Задание 2.4
+        System.out.println(" ");
+        System.out.println("Задание 2.4");
+        System.out.println(" ");
+        int friday = 3;
+        for (; friday <= 31; friday+=7) {
+        System.out.println("Сегодня пятница - " + friday + "-е число. Необходимо сдать отчет");
         }
     }
 }
