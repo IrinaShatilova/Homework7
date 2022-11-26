@@ -13,7 +13,7 @@ public class Main {
         int monthlySavings = 15000;
         int totalSavings = 0;
         int monthNumber = 0;
-        while (totalSavings < 1_000_000) {
+        while (totalSavings < 2_459_000) {
             totalSavings = totalSavings + monthlySavings;
             monthNumber++;
             System.out.println("Месяц " + monthNumber + ", сумма накоплений равна " + totalSavings + " рублей");
